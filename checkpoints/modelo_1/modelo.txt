@@ -1,0 +1,35 @@
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 256, 256, 3)]     0         
+                                                                 
+ conv2d_34 (Conv2D)          (None, 256, 256, 32)      16256     
+                                                                 
+ max_pooling2d_10 (MaxPoolin  (None, 128, 128, 32)     0         
+ g2D)                                                            
+                                                                 
+ conv2d_35 (Conv2D)          (None, 128, 128, 32)      50208     
+                                                                 
+ max_pooling2d_11 (MaxPoolin  (None, 64, 64, 32)       0         
+ g2D)                                                            
+                                                                 
+ conv2d_36 (Conv2D)          (None, 64, 64, 32)        9248      
+                                                                 
+ conv2d_37 (Conv2D)          (None, 64, 64, 32)        9248      
+                                                                 
+ conv2d_transpose_10 (Conv2D  (None, 128, 128, 32)     9248      
+ Transpose)                                                      
+                                                                 
+ conv2d_38 (Conv2D)          (None, 128, 128, 32)      50208     
+                                                                 
+ conv2d_transpose_11 (Conv2D  (None, 256, 256, 32)     9248      
+ Transpose)                                                      
+                                                                 
+ conv2d_39 (Conv2D)          (None, 256, 256, 3)       16227     
+                                                                 
+=================================================================
+Total params: 169,891
+Trainable params: 169,891
+Non-trainable params: 0
+_________________________________________________________________

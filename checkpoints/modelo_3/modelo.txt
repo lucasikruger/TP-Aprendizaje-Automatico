@@ -1,0 +1,43 @@
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 256, 256, 3)]     0         
+                                                                 
+ conv2d_20 (Conv2D)          (None, 256, 256, 32)      2432      
+                                                                 
+ conv2d_21 (Conv2D)          (None, 256, 256, 32)      25632     
+                                                                 
+ max_pooling2d_4 (MaxPooling  (None, 128, 128, 32)     0         
+ 2D)                                                             
+                                                                 
+ conv2d_22 (Conv2D)          (None, 128, 128, 32)      25632     
+                                                                 
+ conv2d_23 (Conv2D)          (None, 128, 128, 32)      25632     
+                                                                 
+ max_pooling2d_5 (MaxPooling  (None, 64, 64, 32)       0         
+ 2D)                                                             
+                                                                 
+ conv2d_24 (Conv2D)          (None, 64, 64, 32)        25632     
+                                                                 
+ conv2d_25 (Conv2D)          (None, 64, 64, 32)        25632     
+                                                                 
+ conv2d_transpose_4 (Conv2DT  (None, 128, 128, 32)     9248      
+ ranspose)                                                       
+                                                                 
+ conv2d_26 (Conv2D)          (None, 128, 128, 32)      25632     
+                                                                 
+ conv2d_27 (Conv2D)          (None, 128, 128, 32)      25632     
+                                                                 
+ conv2d_transpose_5 (Conv2DT  (None, 256, 256, 32)     9248      
+ ranspose)                                                       
+                                                                 
+ conv2d_28 (Conv2D)          (None, 256, 256, 32)      25632     
+                                                                 
+ conv2d_29 (Conv2D)          (None, 256, 256, 3)       2403      
+                                                                 
+=================================================================
+Total params: 228,387
+Trainable params: 228,387
+Non-trainable params: 0
+_________________________________________________________________
